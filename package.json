@@ -1,6 +1,6 @@
 {
-  "name": "psdm",
-  "version": "0.1.0",
+  "name": "dem_ugm_persuratan",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
