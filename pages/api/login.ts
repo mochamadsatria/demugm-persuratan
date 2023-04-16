@@ -17,8 +17,8 @@ export default function handler(
 
         const ip = requestIp.getClientIp(req)
 
-        if (body.username == "Admin") {
-            if (body.password == "DEMUGM2023") {
+        if (body.username == process.env.APP_SERVICE_USERNAME) {
+            if (body.password == process.env.APP_SERVICE_PASSWORD) {
 
                 cache.set(`${ip}`, dayjs().toISOString(), 86400)
 

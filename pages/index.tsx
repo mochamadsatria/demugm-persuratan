@@ -1,5 +1,5 @@
 import { GetServerSideProps } from "next/types";
-import Head from "next/head";
+
 import Link from "next/link";
 
 import useSWR from "swr";
@@ -9,9 +9,6 @@ const fetcher = (...args: [any]) => fetch(...args).then((res) => res.json());
 export default function Home() {
   return (
     <main>
-      <Head>
-        <title>DEM UGM | Persuratan</title>
-      </Head>
       <div>
         <div>
           <div className="flex justify-center">
